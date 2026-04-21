@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="19dp"
+            android:layout_height="17dp"
+            android:background="@android:color/white"
+            android:src="@drawable/row"
+            android:layout_marginTop="15dp"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Waste and Get Point"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Waste Status:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/status_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/waste_status"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/spinner_border" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click On The Buttons To Take Pictures"
+            android:layout_marginBottom="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/snap_picture_button"
+            android:layout_width="49dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#979998"
+            android:src="@drawable/last"
+            android:layout_marginBottom="20dp" />
+
+        <ImageView
+            android:id="@+id/waste_location_map"
+            android:layout_width="376dp"
+            android:layout_height="139dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/image_border"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select The Current District:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/district_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/districts"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/spinner_border" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write The ID Of The Waste:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/description_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="JED-XX-XXX"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Request"
+            android:backgroundTint="#8BC34A"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
+

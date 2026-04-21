@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string-array name="districts">Districts
+        <item>Al-Rayan</item>
+        <item>Al-Andalus</item>
+        <item>Al-Salhiah</item>
+        <item>Al-Hamadaniah</item>
+        <item>Al-Kawthar</item>
+        <item>Al-Bshair</item>
+        <item>Al-Falah</item>
+        <item>Al-Rahmaniah</item>
+        <item>Al-Frosiah</item>
+        <item>Al-Nuzha</item>
+        <item>Al-Bwadi</item>
+        <item>Al-Safa</item>
+        <item>Al-Salamah</item>
+        <item>Al-Rabwah</item>
+        <item>Al-Mohammadiah</item>
+        <item>North Obhor</item>
+        <item>South Obhor</item>
+    </string-array>
+    <string-array name="garbage_sources">
+        <item>House</item>
+        <item>Building</item>
+    </string-array>
+    <string-array name="garbage_types">
+        <item>Plastic</item>
+        <item>Metal</item>
+        <item>Glass</item>
+        <item>Paper</item>
+        <item>Organic</item>
+        <item>Electronics</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="waste_status">
+        <item>Full</item>
+        <item>Half-Full</item>
+        <item>Empty</item>
+    </string-array>
+
+
+    <string-array name="dropdown_items"> What is the purpose of waste management
+        <item></item>
+    </string-array>
+
+</resources>

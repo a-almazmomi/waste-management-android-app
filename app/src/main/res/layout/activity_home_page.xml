@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="82dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/profile_picture" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="31dp"
+        android:background="#00000000"
+        android:src="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="106dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/profile_picture"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toEndOf="@id/profile_picture"
+        android:text="340 points"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/board"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="-142dp"
+        android:src="@drawable/board" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="147dp"
+        android:layout_height="107dp"
+        android:layout_below="@id/profile_picture"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="71dp"
+        android:text="Earn points for reporting trash"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/rectangles"
+        android:layout_width="117dp"
+        android:layout_height="108dp"
+        android:layout_below="@id/profile_picture"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="568dp"
+        android:src="@drawable/ang" />
+
+    <ImageView
+        android:id="@+id/imge"
+        android:layout_width="83dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/profile_picture"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="594dp"
+        android:src="@drawable/image" />
+
+    <ImageView
+        android:id="@+id/rectangless"
+        android:layout_width="108dp"
+        android:layout_height="124dp"
+        android:layout_below="@id/profile_picture"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/ang" />
+
+    <ImageView
+        android:id="@+id/imagee"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_picture"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="585dp"
+        android:src="@drawable/imagee" />
+
+    <ImageView
+        android:id="@+id/rectanglesss"
+        android:layout_width="133dp"
+        android:layout_height="107dp"
+        android:layout_below="@id/profile_picture"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="265dp"
+        android:layout_marginTop="567dp"
+        android:src="@drawable/ang" />
+
+    <ImageView
+        android:id="@+id/imageee"
+        android:layout_width="76dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/profile_picture"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="293dp"
+        android:layout_marginTop="579dp"
+        android:src="@drawable/imageee" />
+
+    <Button
+        android:id="@+id/request_bin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/board"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/green"
+        android:text="Order Bin"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <ImageButton
+            android:id="@+id/button_open_camera"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:src="@drawable/icon" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:background="#00000000"
+            android:src="@drawable/iconn"
+            android:tint="@color/green" />
+
+        <ImageButton
+            android:id="@+id/mapPageBtn"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:background="#00000000"
+            android:src="@drawable/iconnn" />
+
+    </LinearLayout>
+
+</RelativeLayout>

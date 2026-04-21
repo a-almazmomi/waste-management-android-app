@@ -1,0 +1,114 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/otpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP Verification"
+        android:textSize="30sp"
+        android:textColor="#4A4A4A"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:paddingBottom="8dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Instruction Text -->
+    <TextView
+        android:id="@+id/otpInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A 6 digit code has been sent to your Email"
+        android:textSize="16sp"
+        android:textColor="#4A4A4A"
+        android:layout_gravity="start"
+        android:paddingBottom="16dp"/>
+
+    <!-- OTP Label -->
+    <TextView
+        android:id="@+id/otpLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP"
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:paddingBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Lock Icon -->
+        <ImageView
+            android:id="@+id/otpIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/lock"
+        android:contentDescription="OTP Icon"
+        android:layout_gravity="center_vertical"/>
+
+        <!-- OTP EditText -->
+        <EditText
+            android:id="@+id/otpInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter OTP"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Re-send Code Text -->
+    <TextView
+        android:id="@+id/resendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haven't gotten code yet? "
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/resendCodeClickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Re-send code"
+        android:textColor="#8BC34A"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Verification Button -->
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verification"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Earth Image at the Bottom -->
+    <ImageView
+        android:id="@+id/earthImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:alpha="0.5"
+        android:src="@drawable/planet" />
+
+</LinearLayout>
+
+

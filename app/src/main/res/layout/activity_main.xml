@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5">
+
+    <!-- Waste Image at the Top -->
+
+    <!-- Welcome Message -->
+    <ImageView
+        android:id="@+id/wasteImage"
+        android:layout_width="266dp"
+        android:layout_height="284dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Waste Management Image"
+        android:src="@drawable/trashbin" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Clean Neighborhood Text -->
+    <TextView
+        android:id="@+id/cleanNeighborhoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clean Neighborhood"
+        android:textSize="32sp"
+        android:textColor="#8BC34A"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Waste Management System Text -->
+    <TextView
+        android:id="@+id/wasteManagementText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waste Management System App"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp" />
+
+    <!-- Encouraging Text -->
+    <TextView
+        android:id="@+id/encouragingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join us in making your neighborhood cleaner and greener!"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="32dp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#8BC34A" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#8BC34A" />
+</LinearLayout>
+
+
+

@@ -1,0 +1,167 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to"
+        android:textSize="30sp"
+        android:textColor="#8BC34A"
+        android:textStyle="normal"
+        android:layout_gravity="start"
+        android:paddingBottom="8dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Clean Neighborhood Text -->
+    <TextView
+        android:id="@+id/cleanNeighborhoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clean Neighborhood"
+        android:textSize="22sp"
+        android:textColor="#4A4A4A"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:paddingBottom="16dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Email Section -->
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:textStyle="normal"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Email Icon -->
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/user"
+            android:contentDescription="Email Icon"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Password Section -->
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="14sp"
+        android:textColor="#4A4A4A"
+        android:textStyle="normal"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Lock Icon -->
+        <ImageView
+            android:id="@+id/lockIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/lock"
+            android:contentDescription="Lock Icon"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#8BC34A"
+        android:drawableEnd="@drawable/small_arrow"
+        android:drawablePadding="8dp" />
+
+
+    <!-- Sign Up Link -->
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="#8BC34A"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Forget Password Link -->
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget password"
+        android:textColor="#8BC34A"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Earth Image at the Bottom -->
+    <ImageView
+        android:id="@+id/earthImage"
+        android:layout_width="389dp"
+        android:layout_height="327dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="100dp"
+        android:alpha="0.5"
+        android:scaleType="fitCenter"
+        android:src="@drawable/planet" />
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/onboardingImage"
+        android:layout_width="299dp"
+        android:layout_height="457dp"
+        android:contentDescription="a woman keeping everything clean!"
+        android:src="@drawable/keepclean" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clean Neighborhood"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utilize plastic as minimally as possible."
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

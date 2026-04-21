@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#FFFFFF">
+
+    <!-- Image View for Onboarding Image (On Top) -->
+    <ImageView
+        android:id="@+id/onboardingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/nature"
+    android:contentDescription="Onboarding Image"
+    android:layout_gravity="center"/>
+
+    <!-- Title Text (Below Image) -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clean Neighborhood"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+    <!-- Description Text (Below Title) -->
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycle product to save the environment."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <!-- Get Started Button (At the Bottom) -->
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#8BC34A"
+        android:padding="12dp"
+        android:text="Get Started"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+

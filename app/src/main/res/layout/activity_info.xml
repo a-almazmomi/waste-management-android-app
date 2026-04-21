@@ -1,0 +1,144 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/img"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="What is waste management"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What time do you prefer to collect waste?"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButton8AM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:00 AM" />
+
+            <RadioButton
+                android:id="@+id/radioButton12PM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00 AM" />
+
+            <RadioButton
+                android:id="@+id/radioButton6PM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:00 PM" />
+
+            <RadioButton
+                android:id="@+id/radioButton10PM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00 PM" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For suggestions and inquiries"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextBorder"
+            android:layout_width="430dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_border"
+            android:hint="Enter text here"/>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Request"
+            android:backgroundTint="#8BC34A"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="1dp">
+
+        <ImageButton
+            android:id="@+id/button_open_camera"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:src="@drawable/icon" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:background="#00000000"
+            android:src="@drawable/iconn" />
+
+        <ImageButton
+            android:id="@+id/mapPageBtn"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:background="#00000000"
+            android:src="@drawable/iconnn" />
+
+    </LinearLayout>
+</RelativeLayout>
